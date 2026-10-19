@@ -5,7 +5,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -16,6 +15,7 @@ import com.olaf.rereminder.data.Reminder
 import com.olaf.rereminder.ui.edit.EditReminderScreen
 import com.olaf.rereminder.ui.home.HomeScreen
 import com.olaf.rereminder.ui.home.HomeViewModel
+import com.olaf.rereminder.ui.theme.ReminderTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -26,10 +26,9 @@ class MainActivity : ComponentActivity() {
         val app = application as ReminderApplication
 
         setContent {
-            MaterialTheme {
+            ReminderTheme {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    modifier = Modifier.fillMaxSize()
                 ) {
                     var editingReminder by remember { mutableStateOf<Reminder?>(null) }
                     var isCreatingNew by remember { mutableStateOf(false) }
