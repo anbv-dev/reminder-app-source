@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Reminder</string>
+    <string name="no_reminders_due">No reminders due now</string>
+    <string name="overdue_single">1 overdue reminder</string>
+    <string name="overdue_plural">%d overdue reminders</string>
+    <string name="delete_reminder">Delete reminder</string>
+    <string name="description">Description</string>
+    <string name="snooze">Snooze</string>
+    <string name="dismiss">Dismiss</string>
+</resources>

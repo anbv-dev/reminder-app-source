@@ -1,0 +1,6 @@
+<resources>
+    <plurals name="overdue_reminders_count">
+        <item quantity="one">%d overdue reminder</item>
+        <item quantity="other">%d overdue reminders</item>
+    </plurals>
+</resources>
